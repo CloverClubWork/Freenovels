@@ -3,56 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Page title</title>
-<script>
-    var novels = [
-        {
-            title: "A Gal who Looks Good in an Apron is Unfair",
-            image: "https://cdn.novelupdates.com/images/2022/01/A-Gal-Who-Looks-Good-in-an-Apron-is-Unfair_1642143570.jpg",
-            link: "series/aprongal.html"
-        },
-        {
-            title: "Days with my Stepsister",
-            image: "https://cdn.novelupdates.com/images/2021/01/Gimai-Seikatsu.jpg",
-            link: "series/Gimai-Seikatsu.html"
-      },{
-            title: "The Secret of the Silent Witch",
-            image: "https://cdn.novelupdates.com/images/2021/11/Silent-Witch.jpg",
-            link: "series/silent-witch.html"
-        },{
-            title: "I started a part-time job at a lover agency service. I don't know why, but I received requests from many beautiful girls",
-            image: "https://cdn.novelupdates.com/images/2021/10/Koibito-Daik-no-Baito-o-Hajimeta-ore-Nazedarou-Fukus-no-Bishjo-Kara-Shimei-Irai-ga-Haitte-Kuru-LN_1635474582.jpg",
-            link: "series/koibito.html"
-        },{
-            title: "Wandering Witch: The Journey of Elaina",
-            image: "https://imgs.search.brave.com/XDyWzPgu4Zz9PEWS88KAwunsyQ_abNAx3rBHtSrUoqY/rs:fit:1126:1200:1/g:ce/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/bWFqby1uby10YWJp/dGFiaS9pbWFnZXMv/Mi8yYi9MaWdodF9O/b3ZlbF9Wb2x1bWVf/MTEtMC5qcGcvcmV2/aXNpb24vbGF0ZXN0/P2NiPTIwMjAwNDI1/MTgxODE3",
-            link: "series/majo-no-tabitabi.html"
-        }
-    ];
-    
-    var ul = document.getElementById('ulList');
-    
-    for(var i = 0; i < novels.length; i++){
-        let li = document.createElement('li');
-        let a = document.createElement('a');
-        let p = document.createElement('p');
-        let img = document.createElement('img');
-        
-        a.setAttribute('href','');
-        img.setAttribute('src','');
-        
-        a.href = novels[i].link;
-        img.src = novels[i].image;
-        p.innerText = novels[i].title;
-        
-        a.appendChild(p);
-        a.appendChild(img);
-        li.appendChild(a);
-        ul.appendChild(li);
-    }
-</script>
 </head>
 <body>
-    <ul id="ulList"></ul>
-    
+    <ul id="ulList">
+        
+        <li><a href="series/majo-no-tabitabi.html">
+            <p>Wandering Witch: The Journey of Elaina</p>
+            <img src="https://imgs.search.brave.com/XDyWzPgu4Zz9PEWS88KAwunsyQ_abNAx3rBHtSrUoqY/rs:fit:1126:1200:1/g:ce/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/bWFqby1uby10YWJp/dGFiaS9pbWFnZXMv/Mi8yYi9MaWdodF9O/b3ZlbF9Wb2x1bWVf/MTEtMC5qcGcvcmV2/aXNpb24vbGF0ZXN0/P2NiPTIwMjAwNDI1/MTgxODE3" alt="Cover"></img>
+        </a></li>
+        <li><a href="series/koibito.html">
+            <p>I started a part-time job at a lover agency service. I don't know why, but I received requests from many beautiful girls</p>
+            <img src="https://cdn.novelupdates.com/images/2021/10/Koibito-Daik-no-Baito-o-Hajimeta-ore-Nazedarou-Fukus-no-Bishjo-Kara-Shimei-Irai-ga-Haitte-Kuru-LN_1635474582.jpg" alt="Cover"></img>
+        </a></li>
+        <li><a href="series/silent-witch.html">
+            <p>The Secret of the Silent Witch</p>
+            <img src="https://cdn.novelupdates.com/images/2021/11/Silent-Witch.jpg" alt="Cover"></img>
+        </a></li>
+        <li><a href="series/aprongal.html">
+            <p>A Gal who Looks Good in an Apron is Unfair</p>
+            <img src="https://cdn.novelupdates.com/images/2022/01/A-Gal-Who-Looks-Good-in-an-Apron-is-Unfair_1642143570.jpg" alt="Cover"></img>
+        </a></li>
+        <li><a href="series/Gimai-Seikatsu.html">
+            <p>Days with my Stepsister</p>
+            <img src="https://cdn.novelupdates.com/images/2021/01/Gimai-Seikatsu.jpg" alt="Cover"></img>
+        </a></li>
+    </ul>
 </body>
 </html>
